@@ -83,18 +83,36 @@ public class actividad {
             }
         }
     }
-    
-    public void q3() {
+    public void q3(){
+        aceptacion = false;
         if(contador<caracteres.length){
             if(caracteres[contador]== '0'){
                 System.out.println("Estado q3");
                 contador++;
-                q3(); 
+                q4(); 
+ 
+            }else if (caracteres[contador]=='1'){
+                contador++;
+                System.out.println("Estado q3");
+                q3();
+            }
+        }
+    }
+    
+    
+    
+    
+    public void q4() {
+        if(contador<caracteres.length){
+            if(caracteres[contador]== '0'){
+                System.out.println("Estado q4");
+                contador++;
+                q4(); 
             }
         }
         else if(contador==caracteres.length){
             aceptacion = true;
-            System.out.println("Estado q3 de aceptación"); 
+            System.out.println("Estado q4 de aceptación"); 
         }else if(contador<caracteres.length){
             for(int i=2; i<=caracteres.length;i++){
                 if(caracteres[i]==1){
