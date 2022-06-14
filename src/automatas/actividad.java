@@ -37,7 +37,7 @@ public class actividad {
     }
  
  
-    public void q0() {
+    public void q0() {// Estado q0
         aceptacion = false;
         if(contador<caracteres.length){
             if(caracteres[contador]== '0'){
